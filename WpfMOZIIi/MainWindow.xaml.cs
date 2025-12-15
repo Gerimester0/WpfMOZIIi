@@ -93,5 +93,10 @@ namespace WpfMOZIIi
             MessageBox.Show($"Átlagos szabad helyek száma: {atlag:F1}");
         }
 
+        private void _3dfilmek(object sender, RoutedEventArgs e) 
+        {
+            var harDfilmek = mozifilmek.Where(m => m._3D).ToList();
+            dataGrid.ItemsSource = harDfilmek;
+        }
     }
 }
