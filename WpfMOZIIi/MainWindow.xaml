@@ -20,6 +20,8 @@
             <Button Content="Foglalás" Width="120" Click="foglalas"/>
             <Button Content="Szabad Helyek" Width="120" Click="vanhely"/>
             <Button Content="Legnépszerűbb" Width="120" Click="legnepszerubb"/>
+            <Button Content="Átlagos szabad hely" Width="120" Click="atlagosszabad"/>
+            <Button Content="3D-s filmek" Width="120" Click="3dfilmek"/>
         </StackPanel>
     </Grid>
 </Window>

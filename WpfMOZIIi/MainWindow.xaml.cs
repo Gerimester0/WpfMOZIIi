@@ -79,5 +79,13 @@ namespace WpfMOZIIi
 
             
         }
+        private void legnepszerubb(object sender, RoutedEventArgs e)
+        {
+            var legnepszerubb = mozifilmek.OrderByDescending(m => m.Szabadhelyek).FirstOrDefault();
+            if (legnepszerubb != null)
+            {
+                dataGrid.ItemsSource = new List<Mozi> { legnepszerubb };
+            }
+        }
     }
 }
