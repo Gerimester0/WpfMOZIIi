@@ -87,5 +87,11 @@ namespace WpfMOZIIi
                 dataGrid.ItemsSource = new List<Mozi> { legnepszerubb };
             }
         }
+        private void atlagosszabad(object sender, RoutedEventArgs e)
+        {
+            double atlag = mozifilmek.Average(m => m.Szabadhelyek);
+            MessageBox.Show($"Átlagos szabad helyek száma: {atlag:F1}");
+        }
+
     }
 }
